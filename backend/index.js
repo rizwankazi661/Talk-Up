@@ -19,4 +19,4 @@ app.get("/users/:id", (req,res)=> {
     res.send(singleChat);
 })
 
-app.listen(PORT, console.log("Server running on PORT:", PORT));
+app.listen(PORT, console.log(`Server running on PORT: ${PORT}` ));
