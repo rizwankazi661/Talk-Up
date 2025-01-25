@@ -3,7 +3,7 @@ import React from 'react'
 import useChatHook from './Chat.hook'
 import './Chat.styles.scss';
 
-const ChatComponent = () => {
+const Chat = () => {
     const { chats } = useChatHook();
     return (
         <div className='container'>
@@ -18,4 +18,4 @@ const ChatComponent = () => {
     )
 }
 
-export default ChatComponent
+export default Chat
