@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-const useHomeHook = () => {
+const useSignUpHook = () => {
   return {};
 };
 
-export default useHomeHook;
+export default useSignUpHook;

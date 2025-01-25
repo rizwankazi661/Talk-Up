@@ -1,14 +1,16 @@
 import React from 'react';
+import './App.scss';
 import { BrowserRouter, Route, Routes } from 'react-router';
-import HomeComponent from './Pages/Home/Home.component';
 import ChatComponent from './Pages/Chat/Chat.component';
-import './App.css';
+import SignUpComponent from './Pages/Auth/SignUp/SignUp.component';
+import SignInComponent from './Pages/Auth/SignIn/SignIn.component';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomeComponent />} />
+        <Route path="/auth/signin" element={<SignInComponent />} />
+        <Route path="/auth/signup" element={<SignUpComponent />} />
         <Route path="/chat" element={<ChatComponent />} />
       </Routes>
     </BrowserRouter>
