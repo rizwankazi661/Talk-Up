@@ -1,1 +1,48 @@
-.main_container {}
+.main_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.left_container {
+    width: 70%;
+    height: 100%;
+    background-image: url('../../assets//png/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right_container {
+    width: 30%;
+    height: 100%;
+    background-color: azure;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1500px) {
+    .left_container {
+        width: 60%;
+    }
+    .right_container {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .left_container {
+        width: 50%;
+    }
+    .right_container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .left_container {
+        width: 0%;
+    }
+    .right_container {
+        width: 100%;
+    }
+}
