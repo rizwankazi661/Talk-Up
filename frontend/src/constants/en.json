@@ -4,6 +4,10 @@
 	"signIn": {
     "footer": "Dont have an account?",
     "signUpNow": "Sign up now"
+  },
+	"signUp": {
+    "footer": "Already a member?",
+    "signIn": "Sign In"
   }
   }
 }

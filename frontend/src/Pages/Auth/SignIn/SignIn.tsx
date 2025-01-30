@@ -3,10 +3,16 @@ import styles from './SignIn.module.css'
 import Input from '../../../components/common/Input/Input'
 import Button from '../../../components/common/Button/Button';
 import texts from '../../../constants/en.json'
+import { useSignIn } from './SignIn.hook';
 
-function SignIn() {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+export type SignInProps = {
+    setSignInActive: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+function SignIn(props: SignInProps) {
+
+    const { email, password, setEmail, setPassword, goToSignUpPage } = useSignIn(props);
+    const { setSignInActive } = props;
 
     return (
         <div className={styles.main_container}>
@@ -28,7 +34,7 @@ function SignIn() {
                 <Button label="Sign In" type="submit" />
             </div>
             <div className={styles.footer}>
-                {texts.auth.signIn.footer} <a href="" className={styles.hyperlink}>{texts.auth.signIn.signUpNow}</a>
+                {texts.auth.signIn.footer} <span onClick={goToSignUpPage} className={styles.hyperlink}>{texts.auth.signIn.signUpNow}</span>
             </div>
         </div>
     )

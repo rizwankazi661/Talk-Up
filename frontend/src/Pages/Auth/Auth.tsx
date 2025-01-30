@@ -1,10 +1,14 @@
-import React from 'react'
-import styles from './Auth.module.css'
-import logo from '../../assets/png/logo.png'
-import texts from '../../constants/en.json';
-import SignIn from './SignIn/SignIn';
+import React from "react";
+import styles from "./Auth.module.css";
+import logo from "../../assets/png/logo.png";
+import texts from "../../constants/en.json";
+import SignIn from "./SignIn/SignIn";
+import { useAuth } from "./Auth.hook";
+import SignUp from "./SignUp/SignUp";
 
 function Auth() {
+    const { isSignInActive, setSignInActive } = useAuth();
+
     return (
         <div className={styles.main_container}>
             <div className={styles.left_container}></div>
@@ -16,12 +20,11 @@ function Auth() {
                     </div>
                 </div>
                 <div className={styles.content}>
-                    <SignIn />
+                    {isSignInActive ? <SignIn setSignInActive={setSignInActive} /> : <SignUp setSignInActive={setSignInActive} />}
                 </div>
-                {/* <div className={styles.footer}></div> */}
             </div>
         </div>
-    )
+    );
 }
 
-export default Auth
+export default Auth;
