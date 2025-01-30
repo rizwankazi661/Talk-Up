@@ -1,9 +1,11 @@
 import React from 'react'
+import styles from './SignIn.module.css'
+import Input from '../../../components/common/Input/Input'
 
 function SignIn() {
     return (
-        <div>
-            Sign In works
+        <div className={styles.main_container}>
+            <Input />
         </div>
     )
 }

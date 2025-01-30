@@ -16,7 +16,7 @@ function Auth() {
                 <div className={styles.content}>
                     <SignIn />
                 </div>
-                <div className={styles.footer}></div>
+                {/* <div className={styles.footer}></div> */}
             </div>
         </div>
     )

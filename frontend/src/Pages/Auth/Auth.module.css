@@ -22,14 +22,11 @@
     background-color: azure;
 }
 
-/* Header Section */
-
 .header {
     display: flex;    
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background-color: yellowgreen;
     height: 70px;
 }
 
@@ -43,14 +40,9 @@
     font-weight: 600;
 }
 
-/* Content Section */
-
 .content {
     height: calc((100% - 70px));
-    background-color: aqua;
 }
-
-
 
 /* Media Queries */
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Auth from './Pages/Auth/Auth';
+import Auth from './pages/Auth/Auth';
 import './App.css';
 
 function App() {
