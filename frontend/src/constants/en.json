@@ -1,6 +1,9 @@
 {
   "appTitle": "Talk-Up",
   "auth": {
-	"signIn": {}
+	"signIn": {
+    "footer": "Dont have an account?",
+    "signUpNow": "Sign up now"
+  }
   }
 }

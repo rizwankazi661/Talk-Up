@@ -10,8 +10,10 @@ function Auth() {
             <div className={styles.left_container}></div>
             <div className={styles.right_container}>
                 <div className={styles.header}>
-                    <img src={logo} alt="app-logo" className={styles.logo} />
-                    <div className={styles.title}>{texts.appTitle}</div>
+                    <div className={styles.logo_and_name}>
+                        <img src={logo} alt="app-logo" className={styles.logo} />
+                        <div className={styles.title}>{texts.appTitle}</div>
+                    </div>
                 </div>
                 <div className={styles.content}>
                     <SignIn />

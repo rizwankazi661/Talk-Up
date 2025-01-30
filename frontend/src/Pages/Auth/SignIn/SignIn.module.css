@@ -1,4 +1,35 @@
 .main_container {
-    height: 100%;
-    background-color: red;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input_container {
+  width: 80%;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.btn_container {
+  width: 80%;
+  margin-top: 32px;
+}
+
+.footer {
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.hyperlink {
+  text-decoration: none;
+  color: #007aff;
+  padding-left: 8px;
 }
