@@ -1,0 +1,43 @@
+:root {
+  --size: 30px;
+}
+
+.main_container {
+  height: 54px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left_container {
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+.title {
+  height: 100%;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right_container {
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+.notification_icon {
+  height: var(--size);
+  width: var(--size);
+  cursor: pointer;
+}

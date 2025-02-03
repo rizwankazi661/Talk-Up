@@ -2,6 +2,7 @@ import React from 'react';
 import Auth from './pages/Auth/Auth';
 import './App.css';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/auth" />} />
           <Route path="/auth" element={<Auth />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </div>
     </BrowserRouter>

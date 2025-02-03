@@ -1,0 +1,8 @@
+.main_container {
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 12px;
+  box-sizing: border-box;
+}

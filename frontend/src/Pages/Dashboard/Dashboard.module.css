@@ -1,0 +1,29 @@
+.main_container {
+  height: 100%;
+  width: 100%;
+  background: url("../../assets/jpeg/background-blue.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section_container {
+  height: calc(100% - 54px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.left_section {
+  height: 100%;
+  width: 30%;
+}
+
+.right_section {
+  height: 100%;
+  width: 70%;
+}
