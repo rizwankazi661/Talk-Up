@@ -1,7 +1,8 @@
 import React from 'react'
 import styles from './Dashboard.module.css'
 import Navbar from '../../components/Navbar/Navbar'
-import Chat from '../Chat/Chat'
+import Chat from '../../components/Chat/Chat'
+import AllChats from '../AllChats/AllChats'
 
 function Dashboard() {
     return (
@@ -9,7 +10,7 @@ function Dashboard() {
             <Navbar />
             <div className={styles.section_container}>
                 <div className={styles.left_section}>
-                    <Chat />
+                    <AllChats />
                 </div>
                 <div className={styles.right_section}>
                     <Chat />

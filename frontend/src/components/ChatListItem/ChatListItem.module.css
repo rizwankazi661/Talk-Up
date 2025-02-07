@@ -1,0 +1,16 @@
+.main_container {
+  background-color: rgba(172, 172, 172, 0.156);
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.chatName {
+  /* font-size: 18px; */
+}
+
+.lastMessage {
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}

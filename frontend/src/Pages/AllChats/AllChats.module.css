@@ -1,0 +1,35 @@
+.main_container {
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.btn_container {
+  width: max-content;
+}
+
+.content {
+  height: calc(100% - 62px);
+  padding: 12px;
+  background-color: rgba(175, 175, 175, 0.11);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
