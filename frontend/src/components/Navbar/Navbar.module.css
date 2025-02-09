@@ -1,5 +1,5 @@
 :root {
-  --size: 30px;
+  --size: 28px;
 }
 
 .main_container {
@@ -19,6 +19,33 @@
   gap: 28px;
 }
 
+.search_container {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 0 12px;
+}
+
+.search_container:hover,
+.notification_container:hover,
+.profile_container:hover {
+  background-color: rgba(128, 128, 128, 0.256);
+  transition: background-color 0.2s ease-in;
+}
+
+.search_icon {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.search_title {
+  cursor: pointer;
+}
+
 .title {
   height: 100%;
   font-size: 28px;
@@ -36,8 +63,39 @@
   gap: 28px;
 }
 
+.notification_container {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 0 6px;
+  cursor: pointer;
+}
+
 .notification_icon {
+  width: var(--size);
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.profile_container {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 5px;
+  border-radius: 8px;
+}
+
+.profile_icon {
   height: var(--size);
   width: var(--size);
+  cursor: pointer;
+}
+.arrow_icon {
+  height: 18px;
+  width: 18px;
   cursor: pointer;
 }
