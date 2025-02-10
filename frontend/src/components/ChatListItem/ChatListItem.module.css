@@ -5,6 +5,10 @@
   cursor: pointer;
 }
 
+.isSelected {
+  background-color: rgb(107, 191, 219);
+}
+
 .chatName {
   /* font-size: 18px; */
 }

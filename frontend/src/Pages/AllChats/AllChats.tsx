@@ -14,7 +14,7 @@ function AllChats() {
             </div>
             <div className={styles.content}>
                 <ChatListItem />
-                <ChatListItem />
+                <ChatListItem isSelected={true} />
                 <ChatListItem />
                 <ChatListItem />
             </div>
