@@ -3,10 +3,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  max-width: 90%;
+  width: max-content;
   background: white;
-  padding: 20px;
+  padding: 16px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
