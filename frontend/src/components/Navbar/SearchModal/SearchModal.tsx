@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import styles from './SearchModal.module.css'
 import Input from '../../common/Input/Input'
-import Button from '../../common/Button/Button';
 import closeIcon from '../../../assets/svg/close-icon.svg'
+import ChatListItem from '../../ChatListItem/ChatListItem';
 import searchUserIcon from '../../../assets/svg/search-user-icon.svg'
 import emptyStateIcon from '../../../assets/svg/empty-state-icon.svg'
 import startSearchIcon from '../../../assets/jpeg/start-search-icon.jpg'
-import ChatListItem from '../../ChatListItem/ChatListItem';
+import Button from '../../common/Button/Button';
 
 function SearchModal({ onClose }: any) {
 
@@ -27,7 +27,7 @@ function SearchModal({ onClose }: any) {
             setTimeout(() => {
                 setSearchedUsersList([]);
                 setIsSearching(false)
-            }, 3000);
+            }, 700);
         }
     }, [query])
 
@@ -58,7 +58,7 @@ function SearchModal({ onClose }: any) {
                         {
                             isSearching ?
                                 <div className={styles.searching_container}>
-                                    <img className={styles.searchUserIcon} src={searchUserIcon} alt="Search User Icon" />
+                                    {/* <img className={styles.searchUserIcon} src={searchUserIcon} alt="Search User Icon" /> */}
                                     <div className={styles.caption}>Searching...</div>
                                 </div>
                                 :
@@ -70,7 +70,7 @@ function SearchModal({ onClose }: any) {
                                             </div>
                                             :
                                             <div className={styles.empty_list_container}>
-                                                <img className={styles.emptyStateIcon} src={emptyStateIcon} alt="No searches found" />
+                                                {/* <img className={styles.emptyStateIcon} src={emptyStateIcon} alt="No searches found" /> */}
                                                 <div className={styles.caption}>No Searches Found</div>
                                             </div>
                                     }
@@ -81,7 +81,7 @@ function SearchModal({ onClose }: any) {
                     <>
                         {searchedUsersList.length === 0 &&
                             <div className={styles.empty_list_container}>
-                                <img className={styles.startSearchIcon} src={startSearchIcon} alt="Search User Icon" />
+                                {/* <img className={styles.startSearchIcon} src={startSearchIcon} alt="Search User Icon" /> */}
                                 <div className={styles.caption}>Start Searching</div>
                             </div>
                         }
