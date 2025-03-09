@@ -3,10 +3,6 @@ import styles from './SearchModal.module.css'
 import Input from '../../common/Input/Input'
 import closeIcon from '../../../assets/svg/close-icon.svg'
 import ChatListItem from '../../ChatListItem/ChatListItem';
-import searchUserIcon from '../../../assets/svg/search-user-icon.svg'
-import emptyStateIcon from '../../../assets/svg/empty-state-icon.svg'
-import startSearchIcon from '../../../assets/jpeg/start-search-icon.jpg'
-import Button from '../../common/Button/Button';
 
 function SearchModal({ onClose }: any) {
 
@@ -21,13 +17,13 @@ function SearchModal({ onClose }: any) {
             setTimeout(() => {
                 setSearchedUsersList(arr);
                 setIsSearching(false)
-            }, 700);
+            }, 400);
         }
         else {
             setTimeout(() => {
                 setSearchedUsersList([]);
                 setIsSearching(false)
-            }, 700);
+            }, 400);
         }
     }, [query])
 
